@@ -8,18 +8,22 @@
         }
     </style>
 
-
-    <div class="form col-md-3">
-      <form class="" action="index.html" method="post">
+<div class="container">
+  <div class="row">
+    <div class="form col-md-3 col-md-offset-4">
+      <form class="" action="login" method="post">
+        {{ csrf_field() }}
           <div class="form-group">
             <label for="">User Name</label>
-            <input type="text" class="form-control" id="" placeholder="user">
+            <input type="text" name="email" class="form-control" id="" placeholder="user">
           </div>
           <div class="form-group">
             <label for="">Password</label>
-            <input type="text" class="form-control" id="" placeholder="password">
+            <input type="password" name="password" class="form-control" id="" placeholder="password">
           </div>
-          <input type="submit" value="post" >
+          <input type="submit" value="post" class="btn btn-primary" >
       </form>
     </div>
+</div>
+</div>
 @endsection

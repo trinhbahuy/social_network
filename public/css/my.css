@@ -6,10 +6,3 @@
     padding: 30px 30px;
     border-radius: 20%;
 }
-
-@media only screen and (max-width: 400px) {
-    /* For mobile phones: */
-    .form {
-        width: 100%;
-    }
-}
