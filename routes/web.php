@@ -16,3 +16,8 @@ Route::get('login', function () {
 });
 
 Route::post('login', 'UserController@postLogin');
+Route::get('dashboard', 'UserController@dashboard');
+
+Route::post('like', 'UserController@postLike');
+
+Route::get('test', 'UserController@test');
